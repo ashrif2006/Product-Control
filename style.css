@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: #0f172a;
+    --primary: #4facfe;
+    --success: #22c55e;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --text-light: #e5e7eb;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    background-color: #222;
+}
+
+.crud {
+    max-width: 80%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.btn-create {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #022c22;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 14px;
+    font-weight: bold;
+    box-shadow: 0 0 12px rgba(34, 197, 94, .6);
+    transition: .3s;
+}
+
+.btn-create:hover {
+    box-shadow: 0 0 22px rgba(34, 197, 94, 1);
+    transform: scale(1.05);
+}
+
+
+input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: 4px 0;
+    background-color: #111;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+}
+
+input:focus {
+    background-color: #000;
+    color: #fff;
+    scale: 1.1;
+}
+
+.price input {
+    width: 20%;
+}
+
+#total {
+    background-color: #a00d02;
+    padding: 5px 2px;
+    border-radius: 10px;
+}
+
+#total::before {
+    content: "Total:";
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #6566ca;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #8385ff;
+    letter-spacing: 1.5px;
+}
+
+.btnSearch {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#search {
+    display: none;
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: .3s;
+}
+#search#hover{
+    box-shadow: 0 0 15px rgba(99,102,241,.9);
+
+}
+
+.btnSearch button {
+    width: 45%;
+}
+
+#deleteAll::before {
+    content: " Delete All";
+}
+
+#update {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(79, 172, 254, .6);
+    transition: 0.3s;
+
+}
+
+#update:hover {
+    box-shadow: 0 0 20px rgba(79, 172, 254, 1);
+    transform: scale(1.05);
+}
+#deleteAll{
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px rgba(255,65,108,.8);
+  transition: .3s;
+}
+#deleteAll:hover{
+      box-shadow: 0 0 30px rgba(255,75,43,1);
+  transform: scale(1.08);
+}
+#delete {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 65, 108, .6);
+    transition: 0.3s;
+}
+
+#delete:hover,
+#deleteAll:hover {
+    box-shadow: 0 0 20px rgba(255, 75, 43, 1);
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+th,
+td {
+    padding: 5px;
+}
